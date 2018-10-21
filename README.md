@@ -30,16 +30,16 @@ The platform will stand on 3 articulated carbon composite sticks, held by shape-
 The sticks will be placed with a 120° displacement between each other, and will end with a disk platform for better stability even on unstable or dusty surfaces.
 
 ![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/InternalLayout.jpg)
-1. - 5.8 GHz digital transceiver module
-2. - Antenna coupler
-3. - Battery
-4. - Antenna rotor / Webcam / Dust wiper
-5. - CPU / Memory / GPIO Interface
-6. - Voltage regulator / Battery charger
-7. - Ceramic fiber shielding
-8. - Carbon-kevlar composite shell
-9. - ERGAL aluminum case
-10. - Differential pressure sensor
+1. 5.8 GHz digital transceiver module
+2. Antenna coupler
+3. Battery
+4. Antenna rotor / Webcam / Dust wiper
+5. CPU / Memory / GPIO Interface
+6. Voltage regulator / Battery charger
+7. Ceramic fiber shielding
+8. Carbon-kevlar composite shell
+9. ERGAL aluminum case
+10. Differential pressure sensor
 
 PROCESSING UNIT
 32-bit microcontroller, Real Time Clock (RTC), digital and analog GPIOs, I2C interface, 100Mb/Gb Ethernet shield, A4988 stepper controller board (antenna support and solar panel wiper).
