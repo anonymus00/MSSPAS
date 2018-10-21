@@ -72,7 +72,7 @@ The external inlets are designed to gather the wind that passes by the structure
 Mars has an atmospherical pressure of just 6,39 mBar or 6,36 hPa, so we need a sensor sensitive enough to read small pressures and pressure differentials, so we have identified the SDP32 as a possible candidate.
 
 ![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/PressureSensor.jpg)
-![IMAGE](hhttps://github.com/anonymus00/MSSPAS/blob/master/Images/PressureSensorDatasheet.jpg)
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/PressureSensorDatasheet.jpg)
 
 The wind direction can be calculated from the relations between the pressure differentials, while the speed is calculated from the vector sum of the positive pressures. Everything is calculated by an algorithm derived from Bernoulli’s law.
 
