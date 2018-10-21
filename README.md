@@ -20,10 +20,7 @@ Unfortunately, the most exposed part is the upper assembly, where there are the 
 
 The heat produced by the electronic equipment should be enough to keep the internal temperature to optimal levels, especially for the batteries.
 
-
-
-
-
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/GlobalView2.png)
 
 Inside there will be the CPU, a battery, a digital SHF transceiver, a power supply regulation, and a watchdog system (for automatic reset in case of a system crash).
 On the top there will be a monocrystalline solar panel with a rotary cleaning device, a panel antenna, and an HD camera.
@@ -32,7 +29,7 @@ On the outside circumference there will be a thermometer, an opacimeter, the dir
 The platform will stand on 3 articulated carbon composite sticks, held by shape-memory alloy springs (Ni-Ti, Cu-Zn-Al or Cu-Al-Ni).
 The sticks will be placed with a 120° displacement between each other, and will end with a disk platform for better stability even on unstable or dusty surfaces.
 
-
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/InternalLayout.jpg)
 1 - 5.8 GHz digital transceiver module
 2 - Antenna coupler
 3 - Battery
@@ -48,9 +45,7 @@ PROCESSING UNIT
 32-bit microcontroller, Real Time Clock (RTC), digital and analog GPIOs, I2C interface, 100Mb/Gb Ethernet shield, A4988 stepper controller board (antenna support and solar panel wiper).
 For the job, we have identified the Raspberry Pi, a great low-cost candidate with the needed characteristics.
 
-
-
-(Raspberry Pi)
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/RaspberryPi.jpg)
 
 Other than that, we need 4 differential atmospheric pressure transducers, and a 1wire interfaced digital thermometer (like the DS18B20) capable to operate up to -60°C
 
@@ -58,14 +53,16 @@ The opacimeter will be composed by an open plastic tube with an infrared led in 
 
 An HD Webcam mounted on the motorized antenna platform.
 
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/Webcam.jpg)
 
 And a 5,8 GHz digital transceiver. For this purpose, we have identified a commercial piece of hardware commonly used for medium distance terrestrial datalink, like the TP-LINK CPE510.
 
-
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/DigitalTransciever.jpg)
 
 With an adequate high gain directional antenna is possible to transmit data to long distances, even in case of obstacles like depressions and hills. This can be true because unlike on the earth, on Mars the band saturation is almost non-existent.
 An interesting solution is the use of a bi-quad or dual bi-quad panel antenna.
 
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/Antenna.jpg)
 
 This kind of antenna is characterized by an 8 to 10 dB gain, it has a cardioid irradiation lobe and is compact, sturdy, and easy to produce: ideal for our scope.
 
@@ -74,18 +71,12 @@ To measure Martian wind speed and direction we have created a solid state sensor
 The external inlets are designed to gather the wind that passes by the structure (dynamic pressure) and gets compared with the pressure read in the vertical inlet (static pressure) positioned on the bottom part. Each of the 5 external inlets is equipped with a metallic filter to prevent sand and dust from entering the tube and clogging the sensors.
 Mars has an atmospherical pressure of just 6,39 mBar or 6,36 hPa, so we need a sensor sensitive enough to read small pressures and pressure differentials, so we have identified the SDP32 as a possible candidate.
 
-
-
-
-
-
-
-
-
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/PressureSensor.jpg)
+![IMAGE](hhttps://github.com/anonymus00/MSSPAS/blob/master/Images/PressureSensorDatasheet.jpg)
 
 The wind direction can be calculated from the relations between the pressure differentials, while the speed is calculated from the vector sum of the positive pressures. Everything is calculated by an algorithm derived from Bernoulli’s law.
 
-
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/Bernoulli.png)
 
 This solution brings important advantages because by not having moving parts is really sturdy, and can measure a great range of wind forces.
 The measured data can be stored on a memory card for statistical studies and can be sent to the base station on request. 
@@ -94,11 +85,11 @@ An alert will be sent to the Master station if the measured wind speed is higher
 ENERGY SOURCE AND BATTERIES
 Monocrystalline solar panels with a 20W peak power, with high hardness glass able to resist to the Martian abrasive dust.
 
-
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/SolarCell.jpg)
 
 They will be equipped with an automatic wiper composed of a rotating rubber blade.
 
-(image with solar panels and wiper animation)
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/PanelView.jpg)
 
 POWER SUBSYSTEM
 The energy storage will be made by lithium iron phosphate batteries, that now has the best performance in terms of duration, reliability, and power density.
@@ -106,6 +97,7 @@ The total power capacity will be about 12 Ah with a nominal voltage of 12,8V.
 The power draw will be monitored by the CPU to grant good energy use, avoiding dangerous voltage drops under the safe limits. 
 All the power monitoring will be made by an ACS712 module, while for the battery voltage a simple voltage divider will be enough. 
 
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/Battery.jpg)
 
 When the power generated by the solar panel will be enough, the battery will be charged at a constant current. To avoid the voltage exiting the panel from being lower than the one required for the charging, there will be a switching PULL-UP converter to level the voltages.
 The same device will regulate the charging current in order to remain under the safe charging limits.
