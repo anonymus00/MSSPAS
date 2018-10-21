@@ -41,6 +41,7 @@ The sticks will be placed with a 120° displacement between each other, and will
 9. ERGAL aluminum case
 10. Differential pressure sensor
 
+
 PROCESSING UNIT
 32-bit microcontroller, Real Time Clock (RTC), digital and analog GPIOs, I2C interface, 100Mb/Gb Ethernet shield, A4988 stepper controller board (antenna support and solar panel wiper).
 For the job, we have identified the Raspberry Pi, a great low-cost candidate with the needed characteristics.
@@ -66,6 +67,7 @@ An interesting solution is the use of a bi-quad or dual bi-quad panel antenna.
 
 This kind of antenna is characterized by an 8 to 10 dB gain, it has a cardioid irradiation lobe and is compact, sturdy, and easy to produce: ideal for our scope.
 
+
 DIFFERENTIAL PRESSURE SENSOR
 To measure Martian wind speed and direction we have created a solid state sensor, that differs considerably from traditional anemometer mechanical cups, we were inspired by the “Pitot tube” used in the aeronautical sector to measure the relative airspeed, instead of the mill, our sensor uses 4 differential pressure transducers arranged on the circumference of the remote module.
 The external inlets are designed to gather the wind that passes by the structure (dynamic pressure) and gets compared with the pressure read in the vertical inlet (static pressure) positioned on the bottom part. Each of the 5 external inlets is equipped with a metallic filter to prevent sand and dust from entering the tube and clogging the sensors.
@@ -82,6 +84,7 @@ This solution brings important advantages because by not having moving parts is 
 The measured data can be stored on a memory card for statistical studies and can be sent to the base station on request. 
 An alert will be sent to the Master station if the measured wind speed is higher than a set threshold.
 
+
 ENERGY SOURCE AND BATTERIES
 Monocrystalline solar panels with a 20W peak power, with high hardness glass able to resist to the Martian abrasive dust.
 
@@ -90,6 +93,7 @@ Monocrystalline solar panels with a 20W peak power, with high hardness glass abl
 They will be equipped with an automatic wiper composed of a rotating rubber blade.
 
 ![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/PanelView.jpg)
+
 
 POWER SUBSYSTEM
 The energy storage will be made by lithium iron phosphate batteries, that now has the best performance in terms of duration, reliability, and power density.
@@ -106,21 +110,26 @@ The same device will regulate the charging current in order to remain under the 
 OPERATING SYSTEM
 For standardization, flexibility, and convenience we have decided to use a LINUX based OS like RASPBIAN, that contains all the required utilities, like the network connectivity and the sensors management. The system does not require mass memories like hard drives (that can be easily damaged), but a simple 32/64 GB SD card. The only necessary precaution, because of reliability reasons, is a good cosmic ray shielding made from 20mm thick high-density polyethylene (HDPE) box around the card.
 
+
 SOFTWARE DEVELOPING LANGUAGE
 The software will be developed with Python, because of its great implementation in the Raspberry Pi platform, and is perfectly integrated into the Linux operating system. Python is even portable to other platforms and is free and Open Source.
+
 
 NETWORK CONNECTION LOGIC
 The data exchange between stations will be over TCP/IP (Transfer Control Protocol / Internet Protocol). Every remote module will have its own IP address. The communication can be direct or via nearby modules. The data packets will contain a flag to identify its source and will include an error control marker (parity control), flow control (overflow protection), congestion control (network saturation).
 The directive BiQuad antenna will be orientable by using a stepper motor (attached to the webcam and wiper assembly) to optimize the radio signal e make the connection fast and reliable.
+
 
 PHYSICAL CHARACTERISTICS
 Stowed legs dimensions: 500 x 500 x 350 mm
 Estimated weight including batteries and propulsion system: 140 N (about 14 Kg.)
 Actual weight on Mars:  52.6 N (about 5.26 Kg)
 
+
 COMPONENTS AVAILABILITY
 The project has been designed to use already available components, to avoid high-cost, exotic, or custom materials.
 Most of the structural components can be realized with normal 3D printers.
+
 
 ESTIMATED COSTS
 Development and design:    			100 man hours
