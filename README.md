@@ -1,6 +1,6 @@
-MARS SANDSTORM PROXIMITY ALERT SYSTEM
-Sandstorm alert and Mars navigation and exploration aid system
-Designed by Eugenio Cosolo, Patrick Boschian, and Gioele De Odorico.
+MARS SANDSTORM PROXIMITY ALERT SYSTEM<br><br>
+Sandstorm alert and Mars navigation and exploration aid system<br><br>
+Designed by Eugenio Cosolo, Patrick Boschian, and Gioele De Odorico.<br><br><br>
 
 The main purpose of this system is real-time environmental and atmospheric data detection for potentially dangerous sandstorms, aimed to the safeguard of the inhabitants and sensitive instrumentation.
 It can be even used as a “Global Positioning System” for the planet exploration to ease the astronauts’ movement. In case of emergency (like low visibility), it can be used as a virtual reference point, for a position triangulation (radio compass or beacon function).
