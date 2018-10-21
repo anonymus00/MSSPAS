@@ -9,7 +9,7 @@ The network is composed by 2 – 12 stations clusters – arranged along the cir
 In the center, in the inhabited nucleus, there will be a base station which coordinates all the remote modules and broadcast the eventual warnings (like an incoming sandstorm). The distance between the 2 circumferences and the base station (master station) should be enough to detect in time an incoming sandstorm to provide shelter to the astronauts operating on the outside. Periodically the master station will check the remote stations to verify their efficiency and integrity and will be able to assign to every station its own task.
 The Master station will have the same hardware configuration, but with a different software.
 
-!(https://github.com/anonymus00/MSSPAS/blob/master/Images/CrownConfiguration.jpg)
+![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/CrownConfiguration.jpg)
 
 REMOTE STATION STRUCTURE
 The structure is composed by a cylindrical platform with a diameter of 400mm and a height of 150mm, made from a carbon-Kevlar composite for the external case, and a laminated ERGAL shielding in the inside. Between the 2 layers there will be a ceramic fiber insulation.
