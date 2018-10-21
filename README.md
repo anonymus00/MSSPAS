@@ -11,7 +11,7 @@ The Master station will have the same hardware configuration, but with a differe
 
 ![IMAGE](https://github.com/anonymus00/MSSPAS/blob/master/Images/CrownConfiguration.jpg)
 
-REMOTE STATION STRUCTURE
+REMOTE STATION STRUCTURE<br>
 The structure is composed by a cylindrical platform with a diameter of 400mm and a height of 150mm, made from a carbon-Kevlar composite for the external case, and a laminated ERGAL shielding in the inside. Between the 2 layers there will be a ceramic fiber insulation.
 The choice of the carbon-Kevlar composite has been made because of its resistance to micro-meteorites impacts.
 We must note that the thin Mars atmosphere is not able to destroy the meteorites that often strike the planet’s surface. The high speed of the debris, even with a really little mass, can easily pierce an aluminum sheet.
